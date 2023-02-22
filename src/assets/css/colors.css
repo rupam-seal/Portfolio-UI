@@ -1,0 +1,31 @@
+/* all color hex and rgb code for (DARK MODE) */
+:root {
+    --colorTransparent:rgba(0, 0, 0, 0);
+    /* ---------- DARK ---------- */
+    --colorDark: #000000;
+    --colorDarkMedium: #1A1A1A;
+    --colorDarkLight:   #363535;
+    --colorDarkTransparent: rgba(0, 0, 0, 0.1);
+
+    /* ---------- WHITE ---------- */
+    --colorWhite: #ffffff;
+    --colorWhiteMedium: #c8c8c8;
+    --colorWhiteTransparent: rgba(83, 83, 83, 0.1);
+
+    /* ---------- YELLOW --------- */
+    --colorYellow: #FFC700;
+    --colorYellowMedium: #FFD335;
+    --colorYellowLight: #FFD335;
+
+    /* ---------- TOPBAR COLORS --------- */
+    --topbarColorDark: #000000;
+    --topbarColorWhite:#ffffff;
+    --topbarColorYellow:#FFC700;
+    --topbarColorYellowMedium:#FFD335;
+
+    --topbarButtonColor:#FFC700;
+    --topbarButtonBackgroundColor:rgba(255, 255, 255, 0.1);
+    --topbarButtonBorderColor:#FFC700;
+    --topbarButtonActiveBackgroundColor:#FFD335;
+    --topbarButtonActiveColor:#000000;
+}

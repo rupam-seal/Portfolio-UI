@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+1rem = 16px || 100%
+1px = 16/100 = 6.25%
+10px = 6.25%*10 = 62.5%
+Now
+1rem = 10px || 62.5%
+*/
+html {
+  margin: 0rem;
+  scroll-snap-type: y mandatory;
+  /* overflow-y: scroll; */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+    background-color: var(--colorDark);
+    font-family: 'Readex Pro', sans-serif;
+}
+
+/* Removing unwanted margin from "h tag" */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+
+
+::-moz-selection { /* Code for Firefox */
+  color: var(--colorWhite);
+  background: var(--colorYellow);
+}
+
+::selection {
+  color: var(--colorWhite);
+  background: var(--colorYellow);
+}
+
+@media (max-width: 1420px) {
+  html {
+      font-size: 60%;
+  }
+}
+
+@media (max-width: 1250px) {
+  html {
+      font-size: 56%;
+  }
+}
+
+@media (max-width: 1155px) {
+  html {
+      font-size: 52%;
+  }
+}
+
+@media (max-width: 1050px) {
+  html {
+      font-size: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 40%;
+  }
+}

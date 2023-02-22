@@ -1,0 +1,210 @@
+.section__one {
+    background-image: linear-gradient(45deg, #0f1213, #0f1213);
+    padding-left: 23rem;
+    padding-right: 23rem;
+    position: relative;
+    height: 100vh;
+}
+
+/* =================== HERO =================== */
+.hero {
+    height:90vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* =================== HERO LEFT =================== */
+.hero__left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* object blur */
+.hero__obj-blur {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 5rem;
+    background-color: var(--colorYellow);
+    bottom: 15%;
+    left: 30%;
+    position: absolute;
+    filter: blur(15rem);
+}
+
+/* hero text */
+.hero__txt-container {
+    position: relative; 
+    margin-bottom: 3rem;
+}
+
+.hero__line {
+    width: 34rem;
+    position: absolute;
+    top: -10rem;
+}
+
+.hero__hello-txt {  
+    position: absolute;
+    top: -1.5rem;
+    left: -3.5rem;
+    transform: rotate(-34deg);
+    color: var(--colorYellow);
+}
+
+.hero__about-txt {
+    font-size: 5rem;
+    color: var(--colorWhite);
+    margin-bottom: 1rem;
+}
+
+.hero__description-txt {
+    margin-top: 3rem;
+    color: var(--colorWhiteMedium);
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+}
+
+/* Hero hire me button */
+.hero__button {
+    width: 11rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--colorWhite);
+    padding: 1rem 1.2rem;
+    border-radius: 1rem;
+    border-style: none;
+    background-image: linear-gradient(#FFC700, #FFD953);
+    box-shadow: 0rem 2rem 2rem rgba(255, 199, 0, 0.4);
+    cursor: pointer;
+}
+
+.hero__button-img {
+    width: 1.2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.hero__button:active {
+    transform: translateY(1rem);
+    box-shadow: 0rem 1rem 2rem rgba(255, 199, 0, 0.4);
+}
+
+/* --------- HERO RIGHT --------- */
+.hero__right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__eclipse {
+    width: 38vw;
+}
+
+.hero__person {
+    width: 56vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.hero__round {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 5rem;
+    background-color: var(--colorYellow);
+    bottom: 10rem;
+    position: absolute;
+    right: -15%;
+    bottom: 10%;
+}
+
+@media (max-width: 1450px) {
+    .hero__person {
+        width: 78rem;
+    }
+    
+    .hero__eclipse {
+        width: 55rem;
+    }
+}
+
+@media (max-width: 1420px) {
+    .hero__person {
+        width: 80rem;
+    }
+}
+
+@media (max-width: 1370px) {
+    .section__one {
+        padding-left: 16rem;
+        padding-right: 16rem;
+    }
+}
+
+
+@media (max-width: 1250px) {
+    .hero__person {
+        width: 85rem;
+    }
+}
+
+@media (max-width: 1155px) {
+    .hero__eclipse {
+        width: 60rem;
+    }
+
+    .hero__person {
+        width: 90rem;
+    }
+}
+
+@media (max-width: 1120px) {
+    .section__one {
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero__line {
+        top: -9rem;
+        left: -1rem;
+        width: 30rem;
+    }
+
+    .hero__right {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .hero__person {
+        bottom: 0;
+        width: 70rem;
+        margin-right: 12vw;
+    }
+
+    .hero__eclipse {
+        position: absolute;
+        width: 45rem;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 2rem;
+    }
+
+    .hero__left {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        right: 0;
+        align-items: center;
+    }
+}
+

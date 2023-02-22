@@ -1,0 +1,168 @@
+/* =================== TOPBAR =================== */
+
+.topbar {
+    position: fixed;
+    top: 0;
+    right: 20rem;
+    left: 20rem;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4rem;
+    z-index: 500;
+}
+
+.topbar__left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topbar__logo {
+    cursor: pointer;
+}
+
+.highlight1 {
+    color: var(--topbarColorWhite);
+}
+
+.highlight2 {
+    color: var(--topbarColorYellow);
+}
+
+.topbar__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+.menu__item {
+    display: flex;
+    flex-direction: column;
+    margin: 0.4rem 2.5rem;
+    cursor: pointer;
+}
+
+.menu__txt {
+    color: var(--topbarColorWhite);
+    font-weight: 400;
+}
+
+.menu__txt:active {
+    color: var(--topbarColorYellow);
+}
+
+.line {
+    width: 0%; 
+    height: 0.5rem;
+    margin-top: 0.3;
+    border-radius: 1rem;
+    background-color: var(--topbarColorYellow);
+    transition: width 0.4s;
+}
+
+.line--active {
+    width: 100%;
+    background-color: var(--topbarColorYellow);
+}
+
+.menu__item:hover .line {
+    width: 100%;
+}
+
+.menu__item:active .menu__txt {
+    color: var(--topbarColorYellow);
+}
+
+.topbar__button {
+    color: var(--topbarButtonColor);
+    font-weight: 700;
+    background-color: var(--topbarButtonBackgroundColor);
+    padding: 0.8rem 3rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-radius: 1rem;
+    border-color: var(--topbarButtonBorderColor);
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.topbar__button:hover {
+    background-color: var(--colorTransparent);
+}
+
+.topbar__button:active {
+    background-color: var(--topbarButtonActiveBackgroundColor);
+    color: var(--topbarButtonActiveColor);
+}
+
+.topbar__scrolled {
+    --topbarColorDark: #FFC700;
+    --topbarColorWhite:#000000;
+    --topbarColorYellow:#FFFFFF;
+    --topbarColorYellowMedium:#000000;
+
+    --topbarButtonColor:#000000;
+    --topbarButtonBackgroundColor:rgba(83, 83, 83, 0.1);
+    --topbarButtonBorderColor:#000000;
+    --topbarButtonActiveBackgroundColor:#000000;
+    --topbarButtonActiveColor:#FFC700;
+}
+
+.menu__container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #2121216b;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 2rem;
+}
+
+.menu {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@media (max-width: 1370px) {
+    .topbar {
+        right: 14rem;
+        left: 14rem;
+    }
+}
+
+@media (max-width: 1120px) {
+    .topbar {
+        right: 10rem;
+        left: 10rem;
+    }
+}
+  
+
+@media (max-width: 820px) {
+    .menu__item {
+        margin: 0.4rem 1.5rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .topbar__menu {
+        margin-left: 2rem;
+    }
+
+    .topbar__button {
+        font-size: 1.3rem;
+        padding: 0.4rem 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .topbar__menu {
+        display: none;
+    }
+
+    .menu__container {
+        display: flex;
+    }
+}

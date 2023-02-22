@@ -1,0 +1,45 @@
+.hero_reveal1 {
+    filter: blur(0.2rem);
+    transition: transform 1s, filter 2s;
+    transform: translate(-8rem, -5rem);
+}
+
+.hero_reveal2 {
+    filter: blur(0.2rem);
+    transition: transform 1.2s, filter 2.2s;
+    transform: translate(-8rem, -5rem);
+}
+
+.hero_reveal3 {
+    filter: blur(0.2rem);
+    transition: transform 1.4s, filter 2.2s;
+    transform: translate(-8rem, -5rem);
+}
+
+.show {
+    filter: blur(0rem);
+    transform: translate(0rem, 0rem);
+}
+
+.reveal1 {
+    filter: blur(0.5rem);
+    transform: translate(-5rem, -2rem);
+    transition: transform 1s, filter 1s;
+}
+
+.reveal2 {
+    filter: blur(0.5rem);
+    transform: translate(5rem, -2rem);
+    transition: transform 1s, filter 1s;
+}
+
+.reveal3 {
+    filter: blur(0.5rem);
+    transform: translate(0rem, 2.5rem);
+    transition: transform 3s, filter 3s;
+}
+
+.reveal--show {
+    filter: blur(0rem);
+    transform: translate(0rem, 0rem);
+}
